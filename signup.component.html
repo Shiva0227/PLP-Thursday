@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Feedback Form</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script>
+ function validate(){
+	 var name=feedbackform.name.value;
+	 var product_id=feedbackform.product_id.value;
+	 var feedback=feedbackform.feedback.value;
+	
+	 
+	 if(Name=="")
+		 alert('please fill  name')	
+	
+	 
+		 
+	 else if(product_id=="")
+		 alert('please fill product id')
+		 
+	 
+	 else if(feedback=="")
+		 alert('please select feedback')	 
+		 
+	
+ }
+</script>
+</head>
+<body>
+<table class="align-middle">
+<div class="container"  class="align-center">
+<div class="row-sm-3" ><h3 name="text" class="text-info align-center">Feedback Form</h3></div>
+<div class="row">
+
+<form name="feedbackform" method="post" onsubmit="validate()" class="form-group">
+<label>Name*:</label> <input type="text" name="Name" placeholder="Enter Your Name" class="form-control"><br>
+<label>Product Id*:</label> <input type="number" name="productid" placeholder="Enter the Feedback" class="form-control" min="00001" min="9999999"><br>
+<label>Feedback*:</label> <input type="text" name="feedback" placeholder="Enter the feedback" class="form-control"><br>
+
+
+
+</form>
+</div>
+</div>
+</table>
+</body>
+</html>
